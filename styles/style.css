@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.body {
+html {
     background-color: black;
     color: white;
     font-family: system-ui;
@@ -13,21 +13,21 @@
 }
 
 .dummy-section {
-    padding: 2rem 5rem;
+    padding: 1rem;
 }
 
 .dummy-section__title {
     margin: 0 0 2rem 0;
-    font-size: clamp(3rem, 4vw + 0.5rem, 8rem);
+    font-size: clamp(1.125rem, 4vw + 0.5rem, 8rem);
 }
 
 .hero-section {
     position: relative;
-    min-height: 65vw;
+    min-height: 50vw;
     max-height: 95vh;
     padding: 5rem;
     background-image: url("../images/starry-night.png");
-    background-position: bottom;
+    background-position: center 99%;
     background-size: 100%;
 }
 
@@ -37,11 +37,11 @@
     background: rgb(0 0 0 / 0.5);
 
     -webkit-mask: url("../images/starry-night-mask.svg");
-    -webkit-mask-position: center bottom;
+    -webkit-mask-position: center 99%;
     -webkit-mask-size: 100%;
 
     mask: url("../images/starry-night-mask.svg");
-    mask-position: bottom;
+    mask-position: 99%;
     mask-size: 100%;
 }
 
@@ -50,9 +50,8 @@
     width: 100%;
     padding: 0 2rem;
     text-align: center;
-    font-size: clamp(4rem, 5vw + 0.5rem, 9rem);
+    font-size: clamp(1rem, 5vw + 0.5rem, 9rem);
     font-weight: 900;
     text-transform: uppercase;
     overflow-wrap: anywhere;
 }
-
